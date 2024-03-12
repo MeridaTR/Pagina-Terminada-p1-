@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <title>Merida tr</title>
+
+</head>
+<body>
+    <div style="margin :24px;">
+        <nav class="nav navbar-light" style ="background-color: black;"> 
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="color: rgb(227, 233, 233);">inicio</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav navbar-nav">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Unidad 1</a>
+                            <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"
+                        href="perfil.html">Perfil</a><br>
+                        <a class="dropdown-item"
+                        href="calculadora.html">Calculadora</a><br>
+                        <a class="dropdown-item"
+                        href="tienda.html">Tienda parte 1</a>
+
+                        </div>
+                            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false" >Unidad 2</a>
+                            <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"
+                        href="tiendapedido.html">tienda pedido</a><br>
+                        <a class="dropdown-item"
+                        href="json.html">json</a><br>
+                        <a class="dropdown-item"
+                        href="tiendapedido2.html">Tienda parte 2</a>
+
+                        </div>
+                            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false" >Unidad 3</a>
+                            <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"
+                         class="dropdown-item"
+                        href="basededatos.html">base de datos</a><br>
+                        <a class="dropdown-item"
+                        href="peliculas.html">peliculas</a>
+
+                        </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <style>
+        body{
+            background-color: #07226d;
+        
+            font-family:'Times New Roman', Times, serif;
+            color: rgb(252, 252, 252); /*smn, color de letra*/
+            
+            text-align: center;
+        }
+        .perfil{
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            background-color: black;
+padding: 20px;
+box: shadow 10px black;
+        }
+        .foto-prfil{
+            width: 250px;
+            height: auto;border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+    <div class="perfil">
+        <img src="ochoa.pnj.jpg" alt="El gigante que despierta cada 4 años" class="foto-prfil">
+        <h1 id="nombre">-.Guillrmo Ochoa</h1>
+        <h2 id="Posicion">-.POS: Portero</h3>
+            <h2 id="Estatura">-.CM: 1,85</h2>
+        <ul>
+           <li id="telefono">-TEL:8991612464</li>
+           <li id="correo">-Correo:memoochoa@gmail.com</li>
+           <li id="biografia">-soy Fransisco Guillermo Ochoa Magaña</li>
+        </ul>
+    </div>
+    <script>
+        document.addEventListener{'Domcontentloaded',function(){
+            document.getElementById('nombre').textContent='Guillermo Ochoa';
+            document.getElementById('Posicion').textContent='Portero';
+            document.getElementById('Estatura').textContent='1,85';
+            document.getElementById('telefono').textContent='8991612464';
+            document.getElementById('correo').textContent='memoochoa@gmail.com';
+            document.getElementById('biografia').textContent='soy Fransisco Guillermo Ochoa Magaña';
+        }}
+    </script>
+</body>
+</html>

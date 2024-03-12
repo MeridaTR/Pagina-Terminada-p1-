@@ -1,0 +1,208 @@
+{"items":[
+    {
+        "category":"Desayunos",
+        "items":[
+            {
+                "name":"Pasta de zanahoria y huevos",
+                "description":"delisioso para personas fittnes",
+                "price":"$75.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"pasta monkey",
+                "description":"no se a quien se le antojaria pero ahi esta",
+                "price":"$45.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"Ensalada de verdura",
+                "description":"rica para personas veganas",
+                "price":"$68.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"atun frances",
+                "description":"es una version pirata del mexicano",
+                "price":"$78.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"cebollines con queso",
+                "description":"sinceramente no se que sea",
+                "price":"$50.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"tostadas con aguacate",
+                "description":"se ven buenas pero quien sabe",
+                "price":"$95.00",
+                "image":"img/01.jpg" 
+            }
+        ]
+    },
+    {
+        "category":"Comida/aperitivos",
+        "items":[
+            {
+                "name":"aguacate en salmon",
+                "description":"se ve exoberante, puede que este sabroso",
+                "price":"$45.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"Moyetes",
+                "description":"uy buenos, se los recomiendo ",
+                "price":"$58.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"cuchara de aguacate",
+                "description":"no se quien en su santo juicio lo compraria",
+                "price":"$28.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"par de cuasar",
+                "description":"no tengo idea de lo que es",
+                "price":"$69.99",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"jamon con espinaca relleno",
+                "description":"se ve bueno y lo esta",
+                "price":"$139.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"mini pizzas",
+                "description":"son lo mejor de la tienda, no te arrepentiras",
+                "price":"$86.00",
+                "image":"img/01.jpg" 
+            }
+        ]
+    },
+    {
+        "category":"Bebidas",
+        "items":[
+            {
+                "name":"cocacola",
+                "description":"sabes lo que es una coca cola, mala pero sabrosa",
+                "price":"$40.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"aguas naturales",
+                "description":"no son lo mas saludable, pero si lo es mas que una cocacola",
+                "price":"$30.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"malteadas",
+                "description":"esto es mas para postre sinceramente",
+                "price":"$120.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"licuados",
+                "description":"de tu fruta favorita, son lo mejor, pero no mas que las malteadas",
+                "price":"$100.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"agua natural",
+                "description":"es una opcion muy saludable",
+                "price":"$25.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"refrescos",
+                "description":"si la cocacola no te gusta, aqui hay de sabor",
+                "price":"$35.00",
+                "image":"img/01.jpg" 
+            }
+        ]
+    },
+    {
+        "category":"Almuerzos",
+        "items":[
+            {
+                "name":"chilaquiles",
+                "description":"de los mejores platillos de mexico",
+                "price":"180.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"birria",
+                "description":"no te arrepentiras, lo juro",
+                "price":"$230.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"huevos a la mexicana",
+                "description":"todo lo mexicano es lo mejor",
+                "price":"$160.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"moyetes mexicanos?",
+                "description":"el mejor almuerzo",
+                "price":"$60.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"Huevos divorsiados",
+                "description":"son muy buenos , como fiestas de cumpleaños y bodas.",
+                "price":"$140.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"enchiladas",
+                "description":"hay debate entre estas y chilaquiles, tu decides",
+                "price":"$170.00",
+                "image":"img/01.jpg" 
+            }
+        ]
+    },
+    {
+        "category":"Postres",
+        "items":[
+            {
+                "name":"flan",
+                "description":"esta muy bueno y no esta pesado",
+                "price":"$89.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"fresas con crema",
+                "description":"simplemente fresas con crema",
+                "price":"$60.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"pay de queso",
+                "description":"es de los mejores postres",
+                "price":"$50.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"brownies",
+                "description":"chocolate puro, es buenisimo",
+                "price":"$30.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"pastel de chocolate",
+                "description":"si eres amante del chocolate, amaras este",
+                "price":"$60.00",
+                "image":"img/01.jpg" 
+            },
+            {
+                "name":"pastel de frutas",
+                "description":"algo tranquilito para el dia",
+                "price":"$40.00",
+                "image":"img/01.jpg" 
+            }
+        ]
+    }
+]
+}

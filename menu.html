@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <title>TIENDA LA AZULUAMA</title>
+</head>
+<body>
+    <style>
+        img{
+            width: 200px;
+            height: auto;
+        }
+        table,th,td{
+            border: 1px dotted royalblue;
+        }
+        table{
+            width: 80%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            box-shadow: 0 5px 15px black;
+            margin-left: 50px;
+        }
+        th,tr{
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even){
+            background-color: aquamarine;
+        }
+        tr:hover{
+            background-color: royalblue;
+        }
+    </style>
+    <div style="margin: 24px;">
+        <nav class="navbar navar-ligth" style="background-color: beige;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="color: black;">INICIO</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLInk" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Unidad 1</a>
+                            <div class="dropdown-menu" aria-describedby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="perfil.html">perfil</a><br>
+                                <a class="dropdown-item" href="calculadora.html">calculadora</a><br>
+                                <a class="dropdown-item" href="tienda.html">tienda parte 1</a><br>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLInk" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Unidad 2</a>
+                            <div class="dropdown-menu" aria-describedby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="tiendapedido.html">tienda pedido</a><br>
+                                <a class="dropdown-item" href="json.html">Json</a><br>
+                                <a class="dropdown-item" href="tiendapedido2.html">tienda pedido 2</a><br>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLInk" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Unidad 3</a>
+                            <div class="dropdown-menu" aria-describedby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="basededatos.html">base de datos</a><br>
+                                <a class="dropdown-item" href="peliculas.html">peliculas</a><br>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h1>Desayuno</h1>
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+          <td><img src="img/fhz.webp" alt="Desayuno"></td> 
+          <td><p>pasta de zanahooria y huevo, delisioso para personas fittnes </p></td>
+          <td>$75.00</td> 
+        </tr>
+        <tr>
+            <td><img src="img/em.2.webp" alt="Desayuno"></td> 
+            <td><p>pasta monkey, no se a quien se le antojaria pero ahi esta </p></td>
+            <td>$45.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/ev.3.webp" alt="Desayuno"></td> 
+            <td><p>ensalada de verdura, rica para personas veganas</p></td>
+            <td>$68.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/ods.4.webp" alt="Desayuno"></td> 
+            <td><p>atun franceses, son una version pirata de los mexicanos</p></td>
+            <td>$78.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/eb.5.webp" alt="Desayuno"></td> 
+            <td><p>cebolines con queso, no se a q sepa</p></td>
+            <td>$50.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/tda.6.webp" alt="Desayuno"></td> 
+            <td><p>tostadas de aguacate,se ven buenas pero quien sabe </p></td>
+            <td>$95.00</td> 
+          </tr>
+    </table>
+    <h1>Comida/aperitivos</h1>
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+          <td><img src="img/aes.7.webp" alt="Comida/aperitivos"></td> 
+          <td><p>aguacate en salmon, se ve exoberante, puede q este sabroso</p></td>
+          <td>$45.00</td> 
+        </tr>
+        <tr>
+            <td><img src="img/mq.8.webp" alt="Comida/aperitivos"></td> 
+            <td><p>moyetes, muy buenos, los recomiendo</p></td>
+            <td>$58.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/ca.9.webp" alt="Comida/aperitivos"></td> 
+            <td><p>cuchara de aguacate, no se quien en su santo juicio lo compraria</p></td>
+            <td>$28.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/cpa.10.webp" alt="Comida/aperitivos"></td> 
+            <td><p>par de cuasar, no tengo idea de lo que es</p></td>
+            <td>$69.99</td> 
+          </tr>
+          <tr>
+            <td><img src="img/ejp.11.webp" alt="Comida/aperitivos"></td> 
+            <td><p>jamon con espinaca relleno, se ve bueno, y lo esta</p></td>
+            <td>$139.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/mnipzza.12.webp" alt="Comida/aperitivos"></td> 
+            <td><p>mini pizzas, son lo mejor de la tienda, no te arrepentiras</p></td>
+            <td>$86.00</td> 
+          </tr>
+    </table>
+    <h1>Bebidas</h1>
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+          <td><img src="img/cocacla.13.png" alt="Bebidas"></td> 
+          <td><p>sabes lo que es una coca cola, mala pero sabrosa</p></td>
+          <td>$40.00</td> 
+        </tr>
+        <tr>
+            <td><img src="img/an.14.jpg" alt="Bebidas"></td> 
+            <td><p>aguas naturales, no son lo mas saludable, pero si lo es mas que una cocacola</p></td>
+            <td>$30.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/mat.15.jpg" alt="Bebidas"></td> 
+            <td><p>malteadas, esto es mas para postre sinceramente</p></td>
+            <td>$120.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/lic.16.jpg" alt="Bebidas"></td> 
+            <td><p>licuados, de tu fruta favorita, son lo mejor, pero no mas que las malteadas</p></td>
+            <td>$100.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/agnat.17.jpg" alt="Bebidas"></td> 
+            <td><p>agua natural, si estas enfermo, es la mejor opcion</p></td>
+            <td>$25.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/rds.18.jpg" alt="Bebidas"></td> 
+            <td><p>refrescos, si la cocacola no te gusta, aqui hay de sabor</p></td>
+            <td>$35.00</td> 
+          </tr>
+    </table>
+    <h1>Almuerzos</h1>
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+          <td><img src="img/chila.19.jpg" alt="Almuerzos"></td> 
+          <td><p>chilaquiles, lo mejor en comidas mexicanas</p></td>
+          <td>$180.00</td> 
+        </tr>
+        <tr>
+            <td><img src="img/birr.20.jpg" alt="Almuerzos"></td> 
+            <td><p>birria, no te arrepentiras, lo juro</p></td>
+            <td>$230.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/hvmx.21.jpg" alt="Almuerzos"></td> 
+            <td><p>huevos a la mexicana, todo lo mexicano es lo mejor</p></td>
+            <td>$160.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/mollt.22.jpg" alt="Almuerzos"></td> 
+            <td><p>moyetes mexicanos, el mejor almuerzo</p></td>
+            <td>$60.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/hvdiv.23.jpg" alt="Almuerzos"></td> 
+            <td><p>huevos divorsiados, son muy buenos
+              , como fiestas de cumpleaños y bodas.</p></td>
+            <td>$140.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/enchi.24.jpg" alt="Almuerzos"></td> 
+            <td><p>enchiladas, hay debate entre estas y chilaquiles, tu decides</p></td>
+            <td>$169.00</td> 
+          </tr>
+    </table>
+     <h1>Postres</h1>
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+          <td><img src="img/flan,25.jpg" alt="Postres"></td> 
+          <td><p>muy bueno, y no esta pesado</p></td>
+          <td>$89.00</td> 
+        </tr>
+        <tr>
+            <td><img src="img/frsascncrma.26.jpg" alt="Postres"></td> 
+            <td><p>simplemente, fresas con crema</p></td>
+            <td>$60.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/pdq.27.jpg" alt="Postres"></td> 
+            <td><p>es de los mejores postres</p></td>
+            <td>$49.90</td> 
+          </tr>
+          <tr>
+            <td><img src="img/brownies.28.jpg" alt="Postres"></td> 
+            <td><p>chocolate puro, es buenisimo</p></td>
+            <td>$30.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/pch.29.jpg" alt="Postres"></td> 
+            <td><p>si eres amante del chocolate, sin duda te encantara esta</p></td>
+            <td>60.00</td> 
+          </tr>
+          <tr>
+            <td><img src="img/pstdfruts.30.jpg" alt="Postres"></td> 
+            <td><p>algo tranquilo y rico para el dia </p></td>
+            <td>$40.00</td> 
+          </tr>
+    </table>
+    
+</body>
+</html>
