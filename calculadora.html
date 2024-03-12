@@ -82,37 +82,37 @@
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             display: grid;
             place-items: center;
-            background-image: linear-gradient(to left, pink,#00ddff);
+            background-image: linear-gradient(to left,rgb(255, 255, 255),rgb(24, 8, 248));
             height: 100vh;
-        overflow: hidden;
+            overflow: hidden;
         }
         .calc{
-        whidth: auto%;
-        min-width: 300px;
-        max_width:90%;
-        height: auto%;
-        min-height:400px;
-        background-color: transparent;
-           position: relative;
-           border: 2px solid rgb(212, 24, 218);
-           brorder-radius: 10px;
-           display:flex;
-           align-items:center;
-        justify-content:center;
-        padding:20px;
-           flex-direction:column;
-           }  
-           #ans{
+            width: auto;
+            min-width: 300px;
+            max-width: 90%;
+            height: auto;
+            min-height: 400px ;
+            background-color: transparent;
+            position: relative;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            flex-direction:column;
+        }
+        #ans{
             width: 90%;
-            alignt-content:center;
-            margin-top:20px;
-            front-family: Arial, helvetica, sans-serif:
-            front-size:20px;
-            color:blue ;
-            text_align:right;
-
-           }
-           .btn input[type='button']{
+            margin: 20px;
+            margin-top: 20px;
+            font-family: 'Thumbs Down', sans-serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: right;
+            border-radius: 10px;
+        }
+        .btn input[type='button']{
             width: 70px;
             padding: 2px;
             margin: 4px;
@@ -122,80 +122,62 @@
             height: 55px;
             cursor: pointer;
             font-size: 16px;
-            transition: all 0,5s ease;
+            transition: all 0.5s ease;
             background-color: transparent;
             border-radius: 6px;
-           }
-           .btn input[type='button']:hover{
-            background-color: rgb(120, 136, 240);
-            color:white;
-           }
-
+        }
+        .btn input[type='button']:hover{
+            background-color: rgb(4, 0, 255);
+            color: rgb(0, 0, 0);
+        }
            </style>
     <div class="calc">
         <input type="text" id="ans">
         <div class="btn">
-
-            <input type="button" value='C'
-            onclick="Clear()">
-            <input type="button"value='%'
-            onclick="value('%')">
-            <input type="button" value='←'
-            onclick="value('←')">
-            <input type="button" value='/'
-            onclick="value('/')">
+            <input type="button" value='C' onclick="Clear()">
+            <input type="button" value='%' onclick="Solve('%')">
+            <input type="button" value='←' onclick="Back('←')">
+            <input type="button" value='/' onclick="Solve('/')">
             <br>
-            <input type="button" value='7'
-            onclick="value('7')">
-            <input type="button" value='8'
-            onclick="value('8')">
-            <input type="button" value='9'
-            onclick="value('9')">
-            <input type="button" value='x'
-            onclick="value('*')">
+            <input type="button" value='7'  onclick="Solve('7')">
+            <input type="button" value='8' onclick="Solve('8')">
+            <input type="button" value='9' onclick="Solve('9')">
+            <input type="button" value='x' onclick="Solve('*')">
             <br>
-            <input type="button" value='4'
-            onclick="value('4')">
-            <input type="button" value='5'
-            onclick="value('5')">
-            <input type="button" value='6'
-            onclick="value('6')">
-            <input type="button" value='-'
-            onclick="value('-')">
+            <input type="button" value='4'  onclick="Solve('4')">
+            <input type="button" value='5' onclick="Solve('5')">
+            <input type="button" value='6' onclick="Solve('6')">
+            <input type="button" value='-' onclick="Solve('-')">
             <br>
-            <input type="button" value='1'
-            onclick="value('1')">
-            <input type="button" value='2'
-            onclick="value('2')">
-            <input type="button" value='3'
-            onclick="value('3')">
-            <input type="button" value='+'
-            onclick="value('+')">
+            <input type="button" value='1'  onclick="Solve('1')">
+            <input type="button" value='2' onclick="Solve('2')">
+            <input type="button" value='3' onclick="Solve('3')">
+            <input type="button" value='+' onclick="Solve('+')">
             <br>
-            <input type="button" value='00' onclick="solve('00')">
-            <input type="button" value='0' onclick="solve('0')">
-            <input type="button" value='.' onclick="solve('.')">
+            <input type="button" value='00' onclick="Solve('00')">
+            <input type="button" value='0' onclick="Solve('0')">
+            <input type="button" value='.' onclick="Solve('.')">
             <input type="button" value='=' onclick="Result()">
             <br>
 
         </div>
     </div>
     <script>
-        const solve=(val)=>{
-            const v=document.grtElementById('ans');
-            v.value +=val
+          const Solve=(val) =>{
+            const v=document.getElementById('ans');
+            v.value +=val;
         }
-        const clear = ()=>{
-            const imput=docment.getElementById('ans');
+        const Clear = () =>{
+            const input=document.getElementById('ans');
             input.value='';
-        }
-        const result = ()=>{
+        }        
+        const Result = () =>{
             const v1 = document.getElementById('ans').value;
-            const v2 =eval(v1);
-            docment.getElementById('ans').value;
-        } 
-        const back =()=>{
-            const n¿back=document.getElementById('ans');
+            const v2 = eval(v1);
+            document.getElementById('ans').value=v2;
+        }
+        const Back = () =>{
+            const back=document.getElementById('ans');
             back.value=back.value.slice(0,-1);
         }
     </script>
