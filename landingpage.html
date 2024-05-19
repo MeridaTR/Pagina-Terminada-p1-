@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Deadpool</title>
+    <link rel="stylesheet" href="Tienda.CSS">
+</head>
+<body>
+    <style> 
+    body, html{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+        .deadpool{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url('imgs/clrj.jpg')no-repeat center center/cover;
+        }
+        
+        .texto-presentacion{
+            position: absolute;
+            top: 500px;
+            left: 600px;
+            transform: translate(-30%, -80%);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-shadow: black;
+        }
+        .cuadrado{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+        }
+        .brazos{
+            height: -100px;
+            width: -200px;
+            background-color: red;
+            position: absolute;
+        }
+        .pies{
+            height: -100px;
+            width: -200px;
+            background-color: red;
+            position: absolute;
+        }
+        .ojeras{
+            display: block;
+            width: 50px;
+            height: 110px;
+            background-color: black;
+            border-radius: 50% 50% 50% 50% / 60% 60% 60% 60%;
+            position: absolute;
+        }
+        .ojos{
+            width: 50px;
+            height: 110px;
+            background-color: white;
+            border-radius: 50% 50% 50% 50% / 60% 60% 60% 60%;
+            position: absolute;
+        }
+        .triangulo-normal{
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 80px solid black;
+        }
+        .trianguloizquierda{
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 40px solid black;
+        }
+         .logo{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border:2px solid white ;
+            background-color: rgb(0, 0, 0);
+            left: 40px;
+            top: 1182px;
+        }
+        .container1{
+            position: absolute;
+        }
+        
+
+
+</style>
+
+    <div class="deadpool">
+    <div class="texto-presentacion">
+        <h1>Mi primer dibujo en CSS</h1>
+        <h2>Diseño por: Tayler merida </h2>
+        <p>De la especialidad de programacion 4 semestre del cetis 131</p>
+    </div>
+</div>
+<div class="container1" style="left: 1000px;top: 700px;">
+<div class="cuadrado" style="left: 148px; top: 75px; border-radius: 50%;"></div>
+<div class="cuadrado" style="width: 115px; height: 105px; left: 190PX; top: 240px; border-radius: 40%;"></div>
+<div class="ojeras" style="top: 120px; left: 252px"></div>
+<div class="ojeras" style="top: 120px; left: 195px"></div>
+<div class="ojos" style="height: 60px; width: 35px; left: 202px; top: 145px; border-radius: 70%;"></div>
+<div class="ojos" style="height: 60px; width: 35px; left: 260px; top: 145px; border-radius: 70%;"></div>
+<div class="brazos" style="left: 285px; top: 245px;-moz-border-radious: 0 100px 100px 0;
+-webkit-border-radius: 0 100px 100px 0;
+border-radius: 0 200px 400px 0;
+background-color: #000000 ;
+transform:rotate(-40deg);
+height: 35px;
+width: 60px;"
+></div>
+ <div class="brazos" style="left: 150px; top: 265px;-moz-border-radious: 0 100px 100px 0;
+-webkit-border-radius: 0 100px 100px 0;
+border-radius: 0 400px 200px 0;
+background-color: #000000 ;
+transform:rotate(180deg);
+height: 35px;
+width: 60px;"
+></div>
+<div class="pies" style="left: 245px; top: 340px;-moz-border-radious: 0 100px 100px 0;
+-webkit-border-radius: 0 100px 100px 0;
+border-radius: 0 100px 100px 0;
+background-color: #000000 ;
+transform:rotate(90deg);
+height: 30px;
+width: 40px;"
+></div>
+<div class="pies" style="left: 210px; top: 340px;-moz-border-radious: 0 100px 100px 0;
+-webkit-border-radius: 0 100px 100px 0;
+border-radius: 0 100px 100px 0;
+background-color: #000000 ;
+transform:rotate(90deg);
+height: 30px;
+width: 40px;"
+></div>
+</div>
+
+<style>
+    .cuadrados{
+        width: 350px;
+        height: 300px;
+        background-color: black;
+        border-radius: 10%;
+        border-style:ridge ;
+
+    }
+    .imagenenpaginas{
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20%;
+    }
+    .parrafo{
+        font-size: 12px;
+        text-align: center;
+    }
+    .container2{
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-self: start;
+    }
+</style>
+<div class="container2">
+<div class="cuadrados">
+    <br><img src="imgs/dd.jpg" class="imagenenpaginas"><br>
+    <a href="menu.html" style="text-align: center;display: block;">Tienda</a><br>
+    <p class="parrafo">deed deed pool</p>
+</div><br>
+<div class="container2">
+<div class="cuadrados">
+    <br><img src="imgs/dpp.jpg" class="imagenenpaginas"><br>
+    <a href="menu2.html" style="text-align: center;display: block;">Menu2</a><br>
+    <p class="parrafo">ded pool pool </p>
+</div>
+</div>
+</div>
+<div class="container1" style="top: -1015px; left: 650px;">
+<div class="logo" style=" border-radius: 50%;"></div>
+<div class="ojeras" style="top: 1197px; left: 55px;transform:rotate(180deg); border-radius: 100%; width: 125px;height: 125px;"></div>
+<div class="cuadrado" style="left: 107px; top: 1185px; border-radius: 10%; width: 21px;height: 140px;background-color: rgb(255, 0, 0)"></div>
+<div class="ojos" style="left: 73px; top:1250px;width: 15px;height: 35px;transform:rotate(123deg);border-radius: 0 100px 100px 0;-webkit-border-radius: 0 100px 100px 0;-moz-border-radious: 0 100px 100px 0;"></div>
+<div class="ojos" style="left: 148px; top: 1250px;width: 15px;height: 35px;transform:rotate(58deg);border-radius: 0 100px 100px 0;-webkit-border-radius: 0 100px 100px 0;-moz-border-radious: 0 100px 100px 0"></div>
+</div>
+</body>
+</html>
