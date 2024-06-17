@@ -10,7 +10,8 @@
     <link href="https://fonts.cdnfonts.com/css/e-emban" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/activists" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/ebrathotrial" rel="stylesheet">>
-    <title>Rick y Morty_Personajes :D</title>
+    <title>Document</title>
+</head>
 <body>
     <img src="rkandmrty.jpg" alt="imgR">
     <style>
@@ -124,19 +125,15 @@ border: red;
 
 </div>
     <h3>Personajes de Rick y Morty</h3>
-    <div id="personajes"></div>
-    
-
     <script>
-        const fetchRick_Y_Morty = () => {
-            const RAM = 'https://rickandmortyapi.com/api/character';
-            const datacontainer = document.getElementById
+          const API_URL = 'https://rickandmortyapi.com/api/character';
+            const datacontainer = document.getElementById('datacontainer')
 
-          async function fetchData(RAM) {
+          async function fetchData(url) {
             let allCharacters=[];
             try{
                 while(url){
-                    const response = await fetch(RAM);
+                    const response = await fetch(url);
                     const data = await response.json();
                     allCharacters=allCharacters.concat(data.results);
                     url=data.info.next;
@@ -150,35 +147,45 @@ border: red;
 function displayData(data){
     datacontainer.innerHTML='';
 
-                    data.results.forEach(character => {
-                        const characterDiv = document.createElement('div');
-                        character.classlist.add(character);
-                        characterDiv.className = 'character';
+                    data.forEach(character => {
+                        const card = document.createElement('div');
+                        card.classlist.add(card);
+
+                        const img = document.createElement('div');
+                        img.src=character.image;
+                        img.alt=character.name;
+                        const id =document.createElement('h4');
+                        id.textContent=character.id;
+                        const title=document.createElement('h3');
+                        title.textContent=character.name;
+
+                        const status =document.createElement('p');
+                        status.textContent=`Status: ${character.status}`;
+                        const species =document.createElement('p');
+                        status.textContent=`Especie: ${character.species}`;
+                        const gender =document.createElement('p');
+                        status.textContent=`Genero: ${character.gender}`;
+
+                        const origen=document.createElement('p');
+                        gender.textContent= `Origen: ${character.origen}`;
+
+                       
 
 
-                        const persImg = document.createElement('img');
-                        persImg.src = character.image;
-                        persImg.alt = character.name;
-
-
-                        const nmb = document.createElement('NMC');
-                        nmb.textContent = character.name;
-
-
-                        characterDiv.appendChild(persImg);
-                        characterDiv.appendChild(nmb);
-                        datacontainer.appendChild(datacontainer);
-                        personajes.appendChild(character);
+                       card.appendChild(img);
+                       card.appendChild(title);
+                       card.appendChild(id);
+                       card.appendChild(status);
+                       card.appendChild(species);
+                       card.appendChild(gender);
+                       card.appendChild(origen);
+                       datacontainer.appendChild(card);
 
                     });
 
                 };
 
-fetchData(RAM)
-        }
-
-        fetchRick_Y_Morty();
-
     </script>
+   
 </body>
 </html>

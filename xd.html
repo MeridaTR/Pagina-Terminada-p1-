@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <input type="text" id="cityInput" placeholder="Ingresa la ciudad">
+    <button onclick="fetchApiUrl()" class="button">Obtener clima</button>
+    <div id="weather-info"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const apiKey = '2449f2b929d81acef8399aa4113af048'; // Reemplaza esto con tu clave de API de OpenWeatherMap
+
+            window.fetchApiUrl = function() {
+                const city = document.getElementById('cityInput').value.trim();
+                console.log(Ciudad ingresada: ${city}); // Para depuración
+                if (city === '') {
+                    alert('Por favor, ingresa una ciudad.');
+                    return;
+                }
+
+                const apiUrl = https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=es&units=metric;
+                console.log(URL de API: ${apiUrl}); // Para depuración
+
+                fetch(apiUrl)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(Error: ${response.status} ${response.statusText});
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        if (data.cod && data.cod !== 200) {
+                            throw new Error(Error: ${data.message});
+                        }
+
+                        const weatherInfoDiv = document.getElementById('weather-info');
+                        weatherInfoDiv.innerHTML = `
+                            <p>Ciudad: ${data.name}</p>
+                            <p>Temperatura: ${data.main.temp}°C</p>
+                            <p>Descripción: ${data.weather[0].description}</p>
+                        `;
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener los datos del clima:', error);
+                        alert('Ciudad no encontrada o problema con la API. Por favor, intenta de nuevo.');
+                    });
+            };
+        });
+    </script>
+</body>
+</html>

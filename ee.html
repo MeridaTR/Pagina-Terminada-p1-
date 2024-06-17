@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Actual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body {
+    background-size: cover;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 50px;
+}
+.container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+}
+h1 {
+    margin-bottom: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 60px;
+    border-radius: 0;
+    width: 300px;
+    height: 100px;
+}
+.button{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.rayos{
+    width: 5px;
+    height: 50px;
+    background-color: yellow;
+    transform-origin: bottom center;
+    position: absolute;
+}
+    </style>
+    <div class="button"></div>
+    <div class="rayos" style="top: 30px;left: 200px; "></div>
+    <div class="rayos" style="top: 70px;left: 300px;transform:rotate(50deg); " ></div>
+    <div class="rayos" style="top: 70px;left: 90px;transform:rotate(-45deg);"></div>
+    <div class="rayos" style="top: 150px;left: 20px;transform:rotate(90deg);"></div>
+    <div class="rayos" style="top: 150px;left: 320px;transform:rotate(90deg);"></div>
+    <div class="rayos" style="top: 270px;left: 70px;transform:rotate(45deg);"></div>
+    <div class="rayos" style="top: 270px;left: 340px;transform:rotate(-50deg);"></div>
+    <div class="rayos" style="top: 320px;left: 200px;"></div>
+
+
+
+    <div class="container" >
+        <h1>Clima </h1>
+
+        <div id="weather-info"></div>
+
+   
+    </div>
+    <div id="ciudad" class="h2" ></div>
+
+    <button onclick="fetchapiUrl()" class="button"></button>
+   <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const apiKey = '278a51dcca92c43357a69ef2c66513b4'; 
+ const city = "saltillo"; 
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=es&units=metric`;
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const weatherInfoDiv = document.getElementById('weather-info');
+            weatherInfoDiv.innerHTML =  `
+            <p>Ciudad: ${data.name}</p>
+             <p>Temperatura: ${data.main.temp}°C</p>
+             <p>Descripción: ${data.weather[0].description}</p>
+            `;
+        })
+        .catch(error => console.error('Error al obtener los datos del clima:',error));
+});
+    </script>
+</body>
+</html>

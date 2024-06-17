@@ -1,0 +1,36 @@
+<h3>Personajes de Rick y Morty</h3>
+<div id="personajes"></div>
+
+
+<script>
+    const fetchRick_Y_Morty = () => {
+        const RAM = 'https://rickandmortyapi.com/api/character';
+        const datacontainer = document.getElementById
+fetch(RAM)
+.then(res => res.json())
+.then(data => {
+
+                    const persImg = document.createElement('img');
+                    persImg.src = character.image;
+                    persImg.alt = character.name;
+
+
+                    const nmb = document.createElement('NMC');
+                    nmb.textContent = character.name;
+
+
+                    characterDiv.appendChild(persImg);
+                    characterDiv.appendChild(nmb);
+                    datacontainer.appendChild(datacontainer);
+                    personajes.appendChild(character);
+
+                });
+
+            };
+
+fetchData(RAM)
+    }
+
+    fetchRick_Y_Morty();
+
+</script>
